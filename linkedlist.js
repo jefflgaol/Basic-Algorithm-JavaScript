@@ -163,7 +163,6 @@ class LinkedList {
         // The point of this function is to change the 'next' to point the 'previous'.
         // And then switch head and tail.
         let first = this.head;
-        this.tail = this.head; // Dituker di awal, karena sebenernya mau nuker yang head juga, tapi harus nunggu proses reverse berlangsung.
         let second = first.next;
         while(second) {
             const tmp = second.next;
@@ -173,6 +172,7 @@ class LinkedList {
             first = second;
             second = tmp;
         }
+        this.tail = this.head;
         this.head.next = null;
         this.head = first;
         return this.printList();
@@ -188,6 +188,7 @@ console.log(linked_list.printList());
 linked_list.remove(3)
 console.log(linked_list.printList());
 console.log(linked_list.reverse());
+console.log(linked_list)
 
 // const linked_list_2 = new DoublyLinkedList(10);
 // console.log(linked_list_2.append(5));
