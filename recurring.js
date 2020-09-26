@@ -1,7 +1,7 @@
 class Function {
     static findFirstRecurringValue() {
         // Why hashMap is using const? Because we want to make sure the hashMap variable always pointing to a particular array or object. Yet, we can still change what is inside the object.
-        const hashMap = []
+        const hashMap = {}
         // Typically, let is used for for loop variable <-- scope-based
         for (let i = 0; i < array.length; i++) {
             let currentValue = array[i]
