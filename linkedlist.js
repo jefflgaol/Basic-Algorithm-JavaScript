@@ -183,11 +183,11 @@ const linked_list = new LinkedList(10);
 linked_list.append(5);
 linked_list.append(20);
 linked_list.prepend(200);
-linked_list.insert(2, 123)
+// linked_list.insert(2, 123)
 console.log(linked_list.printList());
-linked_list.remove(3)
-console.log(linked_list.printList());
-console.log(linked_list.reverse());
+// linked_list.remove(3)
+// console.log(linked_list.printList());
+// console.log(linked_list.reverse());
 console.log(linked_list)
 
 // const linked_list_2 = new DoublyLinkedList(10);
